@@ -1,7 +1,7 @@
-const redux = require('redux');
-const reducers = require('../reducers');
+const redux = require('redux')
+const reducers = require('../reducers')
 
-module.exports = function(initialState) {
+module.exports = function (initialState) {
   const store = redux.createStore(reducers, initialState)
 
   if (module.hot) {
